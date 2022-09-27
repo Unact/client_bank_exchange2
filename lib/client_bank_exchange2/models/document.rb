@@ -65,7 +65,7 @@ module ClientBankExchange2
       attribute :basis_index?, Types::String.optional.meta(tag_name: "ПоказательОснования")
       attribute :period_index?, Types::String.optional.meta(tag_name: "ПоказательПериода")
       attribute :number_index?, Types::String.optional.meta(tag_name: "ПоказательНомера")
-      attribute :date_index?, Types::Date.optional.meta(tag_name: "ПоказательДаты")
+      attribute :date_index?, Types::String.optional.meta(tag_name: "ПоказательДаты")
       attribute :type_index?, Types::String.optional.meta(tag_name: "ПоказательТипа")
 
       attribute :priority?, Types::String.optional.meta(tag_name: "Очередность")
