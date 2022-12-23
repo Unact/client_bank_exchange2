@@ -1,3 +1,7 @@
+## 0.1.3
+
+- Models::Header sender, receiver are now optional
+
 ## 0.1.2
 
 - Models::Document payer_account_number, payer_inn, receiver_account_number, receiver_inn are now optional
