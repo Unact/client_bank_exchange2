@@ -17,8 +17,8 @@ module ClientBankExchange2
 
       attribute :format_version, Types::String.default(FORMAT_VERSION).meta(tag_name: "ВерсияФормата")
       attribute :encoding, Types::String.default(ENCODING).meta(tag_name: "Кодировка")
-      attribute :sender, Types::String.default(SENDER.freeze).meta(tag_name: "Отправитель")
-      attribute :receiver, Types::String.default(RECEIVER).meta(tag_name: "Получатель")
+      attribute :sender?, Types::String.optional.default(SENDER.freeze).meta(tag_name: "Отправитель")
+      attribute :receiver?, Types::String.optional.default(RECEIVER).meta(tag_name: "Получатель")
       attribute :creation_date?, Types::Date.optional.meta(tag_name: "ДатаСоздания")
       attribute :creation_time?, Types::Time.optional.meta(tag_name: "ВремяСоздания")
 
